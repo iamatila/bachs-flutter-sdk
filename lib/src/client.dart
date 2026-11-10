@@ -1,7 +1,7 @@
 part of 'bachs.dart';
 
 /// The version of this SDK. It is sent in the User-Agent header.
-const String bachsSdkVersion = '0.1.0';
+const String bachsSdkVersion = '0.1.1';
 
 /// The Bachs deployment a client talks to.
 enum BachsEnvironment {
