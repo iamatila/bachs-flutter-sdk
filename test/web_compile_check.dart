@@ -1,6 +1,6 @@
 // Compiled with `dart compile js` in CI to prove the package builds for the
 // web (Flutter web), where dart:io is unavailable. It is not a test suite.
-import 'package:bachs/bachs.dart';
+import 'package:bachs_sdk/bachs_sdk.dart';
 
 void main() {
   final client = BachsClient('sk_sandbox_x', logger: null);

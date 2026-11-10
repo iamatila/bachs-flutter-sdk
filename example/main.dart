@@ -4,7 +4,7 @@
 //   BACHS_API_KEY=sk_sandbox_... dart run example/main.dart
 import 'dart:io';
 
-import 'package:bachs/bachs.dart';
+import 'package:bachs_sdk/bachs_sdk.dart';
 
 Future<void> main() async {
   final client = BachsClient(Platform.environment['BACHS_API_KEY'] ?? '');

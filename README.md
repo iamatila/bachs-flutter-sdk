@@ -14,12 +14,11 @@ a minor release; changes are noted in the [changelog](CHANGELOG.md).
 
 ```yaml
 dependencies:
-  bachs:
-    git: https://github.com/iamatila/bachs-flutter-sdk
+  bachs_sdk: ^0.1.0
 ```
 
 ```dart
-import 'package:bachs/bachs.dart';
+import 'package:bachs_sdk/bachs_sdk.dart';
 ```
 
 It is pure Dart, so it runs in Flutter on Android, iOS, desktop and web, and

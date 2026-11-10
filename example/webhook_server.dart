@@ -5,7 +5,7 @@
 // Then point a webhook endpoint at http://<host>:8080/webhooks/bachs.
 import 'dart:io';
 
-import 'package:bachs/bachs.dart';
+import 'package:bachs_sdk/bachs_sdk.dart';
 
 /// Event IDs already handled. Use your database in production: Bachs
 /// delivers at least once, so the same event can arrive twice.

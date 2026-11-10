@@ -1,4 +1,4 @@
-name: bachs
+name: bachs_sdk
 description: >-
   A Dart and Flutter client for the Bachs payments API: checkout, payments,
   subscriptions, refunds, payouts, Connect and webhook verification.

@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:bachs/bachs.dart';
+import 'package:bachs_sdk/bachs_sdk.dart';
 import 'package:test/test.dart';
 
 const secret = 'whsec_test';
