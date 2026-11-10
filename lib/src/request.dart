@@ -93,6 +93,9 @@ extension on BachsClient {
     }
 
     final op = _Operation(timeout, o.abortTrigger);
+    // Assigned in the loop and returned after the try, so that no value is
+    // returned from inside it.
+    late final T result;
     try {
       for (var attempt = 1;; attempt++) {
         if (op.aborted) {
@@ -148,7 +151,8 @@ extension on BachsClient {
         });
 
         if (response.statusCode >= 200 && response.statusCode < 300) {
-          return _decodeResponse(raw, response.statusCode, requestId, decode);
+          result = _decodeResponse(raw, response.statusCode, requestId, decode);
+          break;
         }
 
         final error = _apiError(response, raw, requestId, isRead);
@@ -172,6 +176,7 @@ extension on BachsClient {
     } finally {
       op.dispose();
     }
+    return result;
   }
 
   Future<http.StreamedResponse> _send(
