@@ -1,0 +1,24 @@
+name: bachs
+description: >-
+  A Dart and Flutter client for the Bachs payments API: checkout, payments,
+  subscriptions, refunds, payouts, Connect and webhook verification.
+version: 0.1.0
+repository: https://github.com/iamatila/bachs-flutter-sdk
+issue_tracker: https://github.com/iamatila/bachs-flutter-sdk/issues
+topics:
+  - payments
+  - bachs
+  - checkout
+  - api-client
+
+environment:
+  sdk: ^3.4.0
+
+dependencies:
+  crypto: ^3.0.3
+  http: ^1.5.0
+  http_parser: ^4.0.2
+
+dev_dependencies:
+  lints: ">=4.0.0 <7.0.0"
+  test: ^1.25.0
